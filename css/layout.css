@@ -1,0 +1,163 @@
+.bold {
+	font-size: 16px;
+	line-height: 110%;
+	font-weight: bold;
+}
+.large_bold {
+	font-size: 18px;
+	line-height: 120%;
+	font-weight: bold;
+}
+.huge_bold {
+	font-size: 20px;
+	line-height: 120%;
+	font-weight: bold;
+}
+.name {
+	font-size: 24px;
+	line-height: 120%;
+	font-weight: bold;
+}
+
+h4 {
+	color: #0174DF;
+}
+
+a {
+	color: #0000CC;
+	text-decoration: none;
+	/*font-weight: bold;*/
+}
+
+a:hover {
+	color: #0000CC;
+	text-decoration: underline;
+}
+
+ul {
+	list-style-type:square
+}
+
+li{
+ 	margin: 10px 0;
+}
+
+ /* 文献单元容器 */
+.pub-item {
+    display: flex;
+    margin: 2rem 0;
+    padding: 1.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+/* 缩略图模块 */
+.pub-thumbnail {
+    flex: 0 0 180px;
+    margin-right: 1.5rem;
+}
+
+.pub-thumbnail img {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+/* 核心信息区 */
+.pub-content {
+    flex: 1;
+}
+        
+.pub-title {
+    font-weight: 600;
+    font-size: 1.1em;
+    margin-bottom: 0.3em;
+}
+        
+.pub-authors {
+    color: #666;
+    font-size: 0.95em;
+}
+        
+.pub-venue {
+    color: #2b6cb0;
+    font-style: italic;
+    margin: 0.5em 0;
+}
+
+/* 交互链接组 */
+.pub-links {
+    margin-top: 0.8em;
+}
+        
+.pub-links a {
+    display: inline-block;
+    padding: 0.3em 0.8em;
+    margin-right: 0.8em;
+    background: #f3f4f6;
+    border-radius: 3px;
+    transition: all 0.2s;
+}
+        
+.pub-links a:hover {
+    background: #e2e8f0;
+}
+
+/*--    body    --*/
+body{
+	background-color:#4863A0;
+	background-attachment: fixed;
+	font-family: 'Arial', sans-serif;
+}
+
+/* main body container  */
+.container {
+	margin:10px auto;
+	width:80%;
+	/*border: 1px solid #848284;*/
+	border: none;
+	padding: 10px;
+	background-color:white;
+}
+
+/*--   Header     --*/
+#header{
+	width:100%;
+	margin:0 auto;
+	/*background-color:#00FFFF;
+	background-image:url(../image/head.jpg);*/
+}
+
+/*--        Main-body       --*/
+#middlebox {
+	/*width:100%;*/
+	border:none;
+	padding:5px;
+	margin-top:5px;
+	margin-bottom:5px;
+	/*background-color:yellow;
+	float:left;*/
+}
+
+/*--        Menubar        --*/
+#menubar {
+	/*float:center;*/
+	text-align: center;
+	border:none;
+	margin-top:20px;
+	margin-bottom:5px;
+	padding:5px;
+}
+
+
+/*--        Footer        --*/
+#footer {
+	clear:both;
+	height:55px;
+}
+
+#footer p {
+	text-align:right;
+	margin:0 auto;
+	font-size:15px;
+	color: grey;
+}

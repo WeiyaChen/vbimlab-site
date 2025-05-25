@@ -1,0 +1,102 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html ;charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="css/layout.css" />
+  <title>vBIMLab's Homepage</title>
+</head>
+
+<body>
+  <div class="container">
+  <!--   menu bar   -->
+  <script>
+  fetch('header.html')
+  .then(response => {
+    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+    return response.text();
+  })
+  .then(html => {
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(html, 'text/html');
+    document.body.prepend(doc.querySelector('header'));
+  })
+  .catch(error => console.error('加载失败:', error));
+  </script>
+  
+    <!--   Header     -->
+    <div id="header">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tbody>
+			<tr>
+				<td rowspan="4" valign="middle" align="right"><img id="portrait" src="images/vbim_logo.png" border="0" height="200" /></td>
+				<td valign="top">&nbsp;</td>
+        <td valign="middle" height="50px"><span class="name">vBIM LAB</span></td>
+				<td rowspan="2" valign="middle" align="right"><img id="univ" src="images/hust_logo.png" border="0" height="100" /></td>
+			</tr>
+			<tr align="left">
+				<td style="width:100px" align="right" valign="top">&nbsp;</td>
+        <td valign="top" height="50px">PI: Weiya Chen, PhD, Associate Professor<br/>
+          School of Civil and Hydraulic Engineering, HUST<br/><a href="http://ndc.hust.edu.cn/en/index.htm">
+            National Center of Technology Innovation for Digital Construction (NCTI-DC)</a></td>
+			</tr>
+      <tr align="left">
+        <td style="width:100px" align="right" valign="top">&nbsp;</td>
+        <td>
+          <a href="https://scholar.google.com/citations?user=RqFaL50AAAAJ&hl=fr">Google Scholar Page</a><br/>
+          <a href="https://www.researchgate.net/profile/Weiya_Chen2">ResearchGate</a>
+        </td>
+        <td valign="top">&nbsp;</td>
+      </tr>
+			<tr align="left">
+				<td style="width:100px" align="right" valign="top">&nbsp;</td>
+				<td height="80px">
+					<span class="bold">E-mail</span>: weiya_chen [at] hust.edu.cn<br/>
+					<!--<span class="bold">Tel</span>: +86 027 ******<br/>-->
+					<span class="bold">Address</span>: Bat W.6, Huazhong University of Science and Technology,<br/>Wuhan, China, 430074
+				</td>
+				<td valign="top">&nbsp;</td>
+      </tr>
+	      </tbody>
+      </table>
+    </div>
+
+    <!--   main-body     -->
+    <div id="middlebox">
+      <br/><br/>
+      <p style="text-align:justify;text-justify:newspaper;margin-top:0px">
+      </p>
+      <p>Hi, welcome. The <b>vBIM (Virtual/Visual BIM) Lab</b> is dedicated for the theories and applications of <i>BIM (Building Information Modeling)</i>, both in coding and data management aspects.</p>
+    
+      <p>For undergraduate or graduate students, feel free to contact me if you are interested in one of the above topics.</p>
+      <p>欢迎对工业软件研发、智能设计、工程数据治理感兴趣的同学加入。</p>
+      <hr /> 
+      <h3 class="huge_bold">Research Projects</h3>
+     	<h4 class="huge_bold">Ongoing Projects</h3>
+        <ul style="list-style-type:square">
+          <li>Cloud-based BIM engine - BIMFlux (2021 ~).</li>
+          <li>DTBIM Lifecycle Management Platform (2023 ~).</li>
+          <li>Design Data Quality Management (2024 ~)</li>
+          <li>MEP Generative Design Tools (2023 ~).</li>
+          <li>HBIM and City Renovation Platform (2020 ~).</li>
+        </ul>
+
+        <h4 class="huge_bold">Past Projects</h3>
+        <ul style="list-style-type:square">
+          <li>Natural virtual navigation with redirected walking (2016 ~ 2019).</li>
+			    <li>SLAM-based inside-out tracking and telepresence (2018 ~ 2019).</li>
+			    <li>Upper and lower limb rehabilitation for stroke patients with VR games (2016 ~ 2019).</li>
+			    <li>Vision library development for industrial production line (2017.3 ~ 2018.8).</li>
+        </ul>
+
+      
+    <!--    footer    -->
+    <div id="footer" align="center">
+      <hr />    
+      <p>&copy; Copyright WT 2025</p>
+   </div>
+   
+ </div>
+
+</body>
+</html>
