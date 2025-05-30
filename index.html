@@ -4,13 +4,15 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html ;charset=utf-8" />
   <link rel="stylesheet" type="text/css" href="css/layout.css" />
+  <script src="header.js"></script>
   <title>vBIMLab's Homepage</title>
 </head>
 
 <body>
+
   <div class="container">
   <!--   menu bar   -->
-  <script>
+  <!-- <script>
   fetch('header.html')
   .then(response => {
     if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
@@ -22,10 +24,15 @@
     document.body.prepend(doc.querySelector('header'));
   })
   .catch(error => console.error('加载失败:', error));
-  </script>
+  </script> -->
   
     <!--   Header     -->
     <div id="header">
+
+      <!-- 菜单组件 -->
+      <my-header></my-header>
+
+
       <table border="0" cellpadding="0" cellspacing="0" width="100%">
         <tbody>
 			<tr>
