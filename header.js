@@ -10,7 +10,6 @@ class Header extends HTMLElement {
       <a href="publications.html">Publications</a> &nbsp; | &nbsp;
       <a href="teaching.html">Teaching</a> &nbsp; | &nbsp;
       <a href="resources.html">Resources</a> &nbsp; | &nbsp;
-      <a href="members.html">Members</a>
       <hr size="2" width="100%" noshade="noshade" />
     </div>
     `;
